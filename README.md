@@ -1,7 +1,11 @@
 READ NUMBERS
 ================
 
-This class accepts a number entered in the form of digits and converts that number to its alpha version
+This class reads the string of numerals:
+E.g.
+input : 1234
+output: one thousand two hundreds thirty four.
+
 ================
 
 Purpose
