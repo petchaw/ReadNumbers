@@ -24,8 +24,7 @@ public class TestReadNumbers
                     return;
             
                 ReadNumbers testObject = new ReadNumbers(userInput);
-            
-                testObject.initialize();
+
                 testObject.readNum();
             }
     }

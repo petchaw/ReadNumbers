@@ -31,6 +31,7 @@ class ReadNumbers
             {
                 numberToRead = userInput;
                 len = numberToRead.length();
+                initialize();
             }
 
         public void initialize()
