@@ -19,6 +19,8 @@ class ReadNumbers
         private int numOne = -1;
         private int numTwo = -1;
         private int numThree = -1;
+        private int queueSize;
+        private String[] alphaArray;
 
         String[] basicNames = {"one", "two", "three", "four", "five", "six", "seven", "eight", "nine"};
         String[] teenNames = {"ten", "eleven", "twelve", "thirteen", "fourteen", "fifteen", "sixteen", "seventeen", "eighteen", "nineteen"};
@@ -176,13 +178,24 @@ class ReadNumbers
 
         public void queueToString()
             {
+                queueSize = alphaQueue.size();
+                alphaArray = new String[queueSize];             // Array that will store the output for getArray()
+                int i = 0;
+
+                // Building the output string and the array for the getter methods
                 while (!alphaQueue.isEmpty())
                     {
-                        output += alphaQueue.poll();
+                        String element = alphaQueue.poll();
+                        output += element;
+                        alphaArray[i] = element;
+                        alphaArray[i] = alphaArray[i].substring(1);
+                        i++;
                     }
                 fixFirstCharacter();
             }
 
+
+        // Removes the space in the beginning and put the first character in upper case
         public void fixFirstCharacter()
             {
                 String letterToFix = output.substring(1, 2);
@@ -190,13 +203,24 @@ class ReadNumbers
                 output = letterToFix + output.substring(2);
             }
 
+
+        // Displays the output on the screen
         public void readNum()
             {
                 System.out.println("--> " + output + "\n");
             }
 
+
+        // Returns the alphabetic version
         public String getOutput()
             {
                 return output;
+            }
+
+
+        // Returns the ouput in an array, that way it can be used to play wave files
+        public String[] getArray()
+            {
+                return alphaArray;
             }
     }

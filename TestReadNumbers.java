@@ -13,6 +13,7 @@ public class TestReadNumbers
         final String SENTINEL = "$";
         String userInput;
         Scanner keyboard = new Scanner(System.in);
+        String[] testArray;
         
         while (true)
             {
