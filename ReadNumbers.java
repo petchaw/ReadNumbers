@@ -212,14 +212,14 @@ class ReadNumbers
 
 
         // Returns the alphabetic version
-        public String getOutput()
+        public String getOutputString()
             {
                 return output;
             }
 
 
         // Returns the ouput in an array, that way it can be used to play wave files
-        public String[] getArray()
+        public String[] getOutputArray()
             {
                 return alphaArray;
             }

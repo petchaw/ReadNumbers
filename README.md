@@ -24,6 +24,6 @@ Currently there are 3 useful methods to work with in this class
 
 readNum(): Displays the output on the screen
 
-getOutput(): Returns the output in a string
+getOutputString(): Returns the output in a string
 
-getArray(): Returns the output in an array
+getOutputArray(): Returns the output in an array
