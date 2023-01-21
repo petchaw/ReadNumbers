@@ -11,7 +11,7 @@ output: one thousand two hundreds thirty four
 Purpose
 -------
 This is an experimental project.  The code is ugly but I will soon clean
-it up and add comments.  This class can be user in application where you
+it up and add comments.  This class can be used in applications where you
 want to read numbers to the user.
 
 For example if a user entered 25, the program will output "twenty five"
